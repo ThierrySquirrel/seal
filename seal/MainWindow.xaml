@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Window
+    x:Class="seal.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:seal"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="seal"
+    mc:Ignorable="d">
+    
+    <RelativePanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Grid
+                Grid.Row="0"
+                Grid.Column="0"
+                RelativePanel.AlignLeftWithPanel="True">
+                <Image Source="/Images/Control/Backgroundimage/BACK_GROUND_IMAGE.gif" Stretch="Fill" />
+            </Grid>
+
+            <Grid
+                Grid.Row="0"
+                Grid.Column="1"
+                Background="Black"
+                RelativePanel.AlignLeftWithPanel="True"
+                RelativePanel.AlignTopWithPanel="True" />
+
+            <Grid Padding="32">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="72" />
+                    <RowDefinition Height="72" />
+                    <RowDefinition Height="72" />
+                    <RowDefinition Height="72" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock
+                    x:Name="controlTextTotalMemory"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Margin="0,16,0,16"
+                    FontSize="20"
+                    Foreground="Orange"
+                    IsTextSelectionEnabled="True"
+                    Text="Total Memory MB:" />
+
+                <TextBlock
+                    x:Name="controlTextUsedMemory"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Margin="0,16,0,16"
+                    FontSize="20"
+                    Foreground="Orange"
+                    IsTextSelectionEnabled="True"
+                    Text="Used Memory MB:" />
+                <TextBlock
+                    x:Name="controlTextClearedMemory"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Margin="0,16,0,16"
+                    FontSize="20"
+                    Foreground="Orange"
+                    IsTextSelectionEnabled="True"
+                    Text="Cleared Memory MB:" />
+                <TextBlock
+                    x:Name="controlTextlVersion"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Margin="0,16,0,16"
+                    FontSize="20"
+                    Foreground="Orange"
+                    IsTextSelectionEnabled="True"
+                    Text="Version:1.0.0" />
+            </Grid>
+            <Grid
+                Grid.Row="0"
+                Grid.Column="2"
+                HorizontalAlignment="Right"
+                Background="Orange"
+                RelativePanel.AlignRightWithPanel="True"
+                RelativePanel.AlignTopWithPanel="True">
+                <ListView HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Button
+                        x:Name="controlButtonStartTask"
+                        Margin="0,32,0,0"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        Click="controlButtonStartTaskClick"
+                        Content="Start Task"
+                        FontSize="32"
+                        Style="{StaticResource AccentButtonStyle}" />
+                    <Button
+                        x:Name="controlButtonTerminateTask"
+                        Margin="0,16,0,0"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        Click="controlButtonTerminateTaskClick"
+                        Content="Terminate Task"
+                        FontSize="32"
+                        Style="{StaticResource AccentButtonStyle}" />
+                    <Button
+                        x:Name="controlButtonProjectWebsite"
+                        Margin="0,16,0,0"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        Click="controlButtonProjectWebsiteClick"
+                        Content="Project Website"
+                        FontSize="32"
+                        Style="{StaticResource AccentButtonStyle}" />
+                    <Button
+                        x:Name="controlButtonLicense"
+                        Margin="0,16,0,0"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        Click="controlButtonLicenseClick"
+                        Content="License"
+                        FontSize="32"
+                        Style="{StaticResource AccentButtonStyle}" />
+                </ListView>
+            </Grid>
+
+
+        </Grid>
+
+
+
+    </RelativePanel>
+</Window>

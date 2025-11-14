@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainWindow.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="MainWindow.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="MemoryEntity.cpp">
+      <Filter>src\Memory\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryEntityBuild.cpp">
+      <Filter>src\Memory\Entity\Build</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryEntityBuildFactory.cpp">
+      <Filter>src\Memory\Entity\Build\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryEntityBuildFactoryConstant.cpp">
+      <Filter>src\Memory\Entity\Build\Factory\Constant</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlTextFactory.cpp">
+      <Filter>src\Control\Text\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlTextFactoryConstant.cpp">
+      <Filter>src\Control\Text\Factory\Constant</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlTimeContainer.cpp">
+      <Filter>src\Control\Time\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlTimeMap.cpp">
+      <Filter>src\Control\Time\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlTimeConstant.cpp">
+      <Filter>src\Control\Time\Constant</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlTextContainer.cpp">
+      <Filter>src\Control\Text\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlTextMap.cpp">
+      <Filter>src\Control\Text\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryCleanFactory.cpp">
+      <Filter>src\Memory\Clean\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryCleanThread.cpp">
+      <Filter>src\Memory\Clean\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryCleanThreadGlobal.cpp">
+      <Filter>src\Memory\Clean\Thread\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryCleanThreadExecute.cpp">
+      <Filter>src\Memory\Clean\Thread\Execute</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlButtonFactory.cpp">
+      <Filter>src\Control\Button\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryCleanFactoryTemplate.cpp">
+      <Filter>src\Memory\Clean\Factory\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="ToastFactory.cpp">
+      <Filter>src\Toast\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="ToastFactoryConstant.cpp">
+      <Filter>src\Toast\Factory\Constant</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlButtonFactoryConstant.cpp">
+      <Filter>src\Control\Button\Factory\Constant</Filter>
+    </ClCompile>
+    <ClCompile Include="IconFactory.cpp">
+      <Filter>src\Icon\Factory</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="MemoryEntity.h">
+      <Filter>src\Memory\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryEntityBuild.h">
+      <Filter>src\Memory\Entity\Build</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryEntityBuildFactory.h">
+      <Filter>src\Memory\Entity\Build\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryEntityBuildFactoryConstant.h">
+      <Filter>src\Memory\Entity\Build\Factory\Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlTextFactory.h">
+      <Filter>src\Control\Text\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlTextFactoryConstant.h">
+      <Filter>src\Control\Text\Factory\Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlTimeContainer.h">
+      <Filter>src\Control\Time\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlTimeMap.h">
+      <Filter>src\Control\Time\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlTimeConstant.h">
+      <Filter>src\Control\Time\Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlTextContainer.h">
+      <Filter>src\Control\Text\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlTextMap.h">
+      <Filter>src\Control\Text\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryCleanFactory.h">
+      <Filter>src\Memory\Clean\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryCleanThread.h">
+      <Filter>src\Memory\Clean\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryCleanThreadGlobal.h">
+      <Filter>src\Memory\Clean\Thread\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryCleanThreadExecute.h">
+      <Filter>src\Memory\Clean\Thread\Execute</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlButtonFactory.h">
+      <Filter>src\Control\Button\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryCleanFactoryTemplate.h">
+      <Filter>src\Memory\Clean\Factory\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="ToastFactory.h">
+      <Filter>src\Toast\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="ToastFactoryConstant.h">
+      <Filter>src\Toast\Factory\Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlButtonFactoryConstant.h">
+      <Filter>src\Control\Button\Factory\Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="IconFactory.h">
+      <Filter>src\Icon\Factory</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{e48dc53e-40b1-40cb-970a-f89935452892}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{729d5f8a-df59-48f0-945c-15a1e11c1fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Memory">
+      <UniqueIdentifier>{49cf0fbe-056d-4941-becf-87c7e4f3d968}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Memory\Entity">
+      <UniqueIdentifier>{ca9e71f1-494b-4332-8390-fc303c6e2091}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Memory\Entity\Build">
+      <UniqueIdentifier>{c4926066-ae90-41b6-b692-2099d30bc789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Memory\Entity\Build\Factory">
+      <UniqueIdentifier>{9512a52c-bec0-4d0b-8686-1e8153dfaf3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Memory\Entity\Build\Factory\Constant">
+      <UniqueIdentifier>{f69d26ff-71bc-40d9-9a71-c934bea9cfcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Control">
+      <UniqueIdentifier>{ab537699-8e5a-4b17-a605-d3d7a3f9ce3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Control\Text">
+      <UniqueIdentifier>{40f8b77c-4216-431c-b37f-f89ef9a3ce7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Control\Text\Factory">
+      <UniqueIdentifier>{3f5a3dc9-b610-4cb4-bc2b-23d5a959f68a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Control\Text\Factory\Constant">
+      <UniqueIdentifier>{bf8836d6-a9cb-4572-a743-91cbe4545f9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Control\Time">
+      <UniqueIdentifier>{7b62f17e-fbeb-4cd7-b7ff-b60d63dad5e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Control\Time\Container">
+      <UniqueIdentifier>{56692870-2588-4568-8981-4ebb404be52d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Control\Time\Constant">
+      <UniqueIdentifier>{699fc34c-5a01-4a06-a827-27d1a1a90c57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Control\Text\Container">
+      <UniqueIdentifier>{be4b1cfc-afdc-469a-b195-0e14dcb15216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Memory\Clean">
+      <UniqueIdentifier>{75ce6ec7-96d3-4f93-8469-f53719e2e660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Memory\Clean\Factory">
+      <UniqueIdentifier>{2c1deada-d4ba-4b51-a00d-8d15e0fcdd8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Memory\Clean\Thread">
+      <UniqueIdentifier>{14ca8d60-69b4-4d66-8f39-d9fd2c22cd53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Memory\Clean\Thread\Global">
+      <UniqueIdentifier>{1f055c8e-db6a-4056-bbbf-3077237b9adc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Memory\Clean\Thread\Execute">
+      <UniqueIdentifier>{f03d50da-4e25-44e1-aa34-6c857f5eb1e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Control\Button">
+      <UniqueIdentifier>{142fdac8-9415-4adf-bd2d-c89f6bb08a08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Control\Button\Factory">
+      <UniqueIdentifier>{9559852e-173e-4d6a-b518-c7be0f9cec0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Memory\Clean\Factory\Template">
+      <UniqueIdentifier>{8ebf7eaf-2ddb-4b9c-be8f-f8003a6c81bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Toast">
+      <UniqueIdentifier>{9d5400e1-25c7-472f-bd98-a9a8f2510e6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Toast\Factory">
+      <UniqueIdentifier>{7b92b62e-1ae7-4926-aa75-6d8ad4726971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Toast\Factory\Constant">
+      <UniqueIdentifier>{96584dc9-453c-4707-b091-a90f48ef12b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Control\Button\Factory\Constant">
+      <UniqueIdentifier>{219a7939-fdd1-45e7-917e-3eb68455be04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Icon">
+      <UniqueIdentifier>{014ff190-632e-43e5-b73f-3753af520b4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Icon\Factory">
+      <UniqueIdentifier>{c684a1ff-70c8-43db-97ef-06097e447598}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="..\..\..\..\..\..\LICENSE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natstepfilter" />
+  </ItemGroup>
+</Project>
