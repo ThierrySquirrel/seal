@@ -1,0 +1,54 @@
+# Visual Studio temporary files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+
+enc_temp_folder/
+
+# WINUI3
+AppPackages/
+Generated Files/
+
+# OS generated files (example for Windows)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+ipch/
+packages/
+*.pch
+*.aps
+*.dlg
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.cachefile.lock
+*.cachefile.lock.bak
+*.cachefile.bak
+*.log
+*.vspscc
+ipch/
+*.vashared.rdb
+*.scc
+*_wpftmp.csproj
+*_wpftmp.vbproj
+*_wpftmp.csproj.user
+*_wpftmp.vbproj.user
+*_wpftmp_CopyLocal.txt
+_UpgradeReport_Files/
+_UpgradeReport.txt
+BenchViewState.xml
+BenchmarkResults.xml
+*.intermediate.manifest
+*.zip
