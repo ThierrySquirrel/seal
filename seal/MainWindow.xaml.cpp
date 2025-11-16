@@ -49,7 +49,6 @@ namespace winrt::seal::implementation
         controlButtonStartTask().IsEnabled(false);
         controlButtonTerminateTask().IsEnabled(true);
 
-        winrt::seal::implementation::MainWindow::initializeControlAll();
         ControlButtonFactory::controlButtonStartTaskClick();
     }
 
@@ -102,6 +101,15 @@ namespace winrt::seal::implementation
 
     }
 
+    void winrt::seal::implementation::MainWindow::initializeControlIcon() {
+        winrt::hstring iconPath = IconFactory::getIconPath();
+        winrt::seal::implementation::MainWindow::AppWindow().SetIcon(iconPath);
+    }
+
+    void winrt::seal::implementation::MainWindow::initializeControlMedia() {
+        controlMedia().MediaPlayer().IsLoopingEnabled(true);
+        controlMedia().MediaPlayer().IsMuted(true);
+    }
 
     void winrt::seal::implementation::MainWindow::initializeControlTime() {
         DispatcherTimer dispatcherTimer = ControlTimeContainer::getControlTime();
@@ -114,12 +122,9 @@ namespace winrt::seal::implementation
         }
     }
 
-    void winrt::seal::implementation::MainWindow::initializeControlIcon() {
-        winrt::hstring iconPath = IconFactory::getIconPath();
-        winrt::seal::implementation::MainWindow::AppWindow().SetIcon(iconPath);
-    }
     void winrt::seal::implementation::MainWindow::initializeControlAll() {
         winrt::seal::implementation::MainWindow::initializeControlIcon();
+        winrt::seal::implementation::MainWindow::initializeControlMedia();
         winrt::seal::implementation::MainWindow::initializeControlTime();
     }
 

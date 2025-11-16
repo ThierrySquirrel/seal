@@ -77,7 +77,7 @@
     <Content Include="Images\Badge\Badge48x48.png" />
     <Content Include="Images\Badge\Badge96x96.png" />
     <Content Include="Images\Badge\Bagde30x30.png" />
-    <Content Include="Images\Control\Backgroundimage\BACK_GROUND_IMAGE.gif" />
+    <Content Include="Images\Control\Backgroundimage\BACK_GROUND_IMAGE.mp4" />
     <Content Include="Images\Icon\favicon.ico" />
     <Content Include="Images\LargeTile.scale-100.png" />
     <Content Include="Images\LargeTile.scale-125.png" />

@@ -31,6 +31,8 @@
 #include <winrt/Microsoft.UI.Xaml.h>
 #include <winrt/Microsoft.UI.Windowing.h>
 
+#include<winrt/Windows.Media.Playback.h>
+
 #include <functional> 
 
  /**
@@ -49,6 +51,12 @@ namespace winrt::seal::implementation
 
         int32_t MyProperty();
         void MyProperty(int32_t value);
+
+        void InitializeComponent() {
+            MainWindowT::InitializeComponent();
+            initializeControlAll();
+        }
+
         void controlButtonStartTaskClick(Windows::Foundation::IInspectable const& sender,
             Microsoft::UI::Xaml::RoutedEventArgs const& args);
         void controlButtonTerminateTaskClick(Windows::Foundation::IInspectable const& sender,
@@ -65,8 +73,9 @@ namespace winrt::seal::implementation
         void updateVersion();
         void updateAllUi();
 
-        void initializeControlTime();
         void initializeControlIcon();
+        void initializeControlMedia();
+        void initializeControlTime();
         void initializeControlAll();
     };
 }

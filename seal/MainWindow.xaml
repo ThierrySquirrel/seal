@@ -24,8 +24,13 @@
                 Grid.Row="0"
                 Grid.Column="0"
                 RelativePanel.AlignLeftWithPanel="True">
-                <Image Source="/Images/Control/Backgroundimage/BACK_GROUND_IMAGE.gif" Stretch="Fill" />
+                <MediaPlayerElement
+                    x:Name="controlMedia"
+                    AutoPlay="True"
+                    Source="ms-appx:///Images/Control/Backgroundimage/BACK_GROUND_IMAGE.mp4"
+                    Stretch="Fill" />
             </Grid>
+
 
             <Grid
                 Grid.Row="0"
