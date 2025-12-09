@@ -62,6 +62,11 @@ namespace winrt::seal::implementation
         void controlButtonTerminateTaskClick(Windows::Foundation::IInspectable const& sender,
             Microsoft::UI::Xaml::RoutedEventArgs const& args);
 
+        void controlButtonGpuAccelerationClick(Windows::Foundation::IInspectable const& sender,
+            Microsoft::UI::Xaml::RoutedEventArgs const& args);
+        void controlButtonPauseGpuClick(Windows::Foundation::IInspectable const& sender,
+            Microsoft::UI::Xaml::RoutedEventArgs const& args);
+
         void controlButtonProjectWebsiteClick(Windows::Foundation::IInspectable const& sender,
             Microsoft::UI::Xaml::RoutedEventArgs const& args);
         void controlButtonLicenseClick(Windows::Foundation::IInspectable const& sender,

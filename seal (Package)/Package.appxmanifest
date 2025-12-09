@@ -10,7 +10,7 @@
   <Identity
     Name="seal"
     Publisher="CN=Teemo"
-    Version="1.0.0.0" />
+    Version="1.0.1.0" />
 
   <mp:PhoneIdentity PhoneProductId="a4017f92-0ab1-4abf-b3e1-af716e024e7b" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 

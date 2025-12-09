@@ -61,6 +61,19 @@ namespace winrt::seal::implementation
         ControlButtonFactory::controlButtonTerminateTask();
     }
 
+    void winrt::seal::implementation::MainWindow::controlButtonGpuAccelerationClick(Windows::Foundation::IInspectable const& sender,
+        Microsoft::UI::Xaml::RoutedEventArgs const& args) {
+        controlButtonPauseGpu().IsEnabled(true);
+        controlButtonGpuAcceleration().IsEnabled(false);
+        controlMedia().MediaPlayer().Play();
+    }
+    void winrt::seal::implementation::MainWindow::controlButtonPauseGpuClick(Windows::Foundation::IInspectable const& sender,
+        Microsoft::UI::Xaml::RoutedEventArgs const& args) {
+        controlButtonPauseGpu().IsEnabled(false);
+		controlButtonGpuAcceleration().IsEnabled(true);
+		controlMedia().MediaPlayer().Pause();
+    }
+
     void winrt::seal::implementation::MainWindow::controlButtonProjectWebsiteClick(Windows::Foundation::IInspectable const& sender,
         Microsoft::UI::Xaml::RoutedEventArgs const& args) {
 
@@ -109,6 +122,8 @@ namespace winrt::seal::implementation
     void winrt::seal::implementation::MainWindow::initializeControlMedia() {
         controlMedia().MediaPlayer().IsLoopingEnabled(true);
         controlMedia().MediaPlayer().IsMuted(true);
+        controlButtonPauseGpu().IsEnabled(true);
+        controlButtonGpuAcceleration().IsEnabled(false);
     }
 
     void winrt::seal::implementation::MainWindow::initializeControlTime() {

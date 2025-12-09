@@ -115,6 +115,24 @@
                         FontSize="32"
                         Style="{StaticResource AccentButtonStyle}" />
                     <Button
+                        x:Name="controlButtonGpuAcceleration"
+                        Margin="0,16,0,0"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        Click="controlButtonGpuAccelerationClick"
+                        Content="Gpu Acceleration"
+                        FontSize="32"
+                        Style="{StaticResource AccentButtonStyle}" />
+                    <Button
+                        x:Name="controlButtonPauseGpu"
+                        Margin="0,16,0,0"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        Click="controlButtonPauseGpuClick"
+                        Content="Pause Gpu"
+                        FontSize="32"
+                        Style="{StaticResource AccentButtonStyle}" />
+                    <Button
                         x:Name="controlButtonProjectWebsite"
                         Margin="0,16,0,0"
                         HorizontalAlignment="Stretch"
