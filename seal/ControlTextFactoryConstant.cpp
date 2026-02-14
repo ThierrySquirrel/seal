@@ -28,7 +28,7 @@
 static const std::wstring SHOW_TOTAL_MEMORY = L"Total memory MB:";
 static const std::wstring SHOW_USED_MEMORY = L"Used Memory MB:";
 static const std::wstring SHOW_CLEARED_MEMORY = L"Cleared Memory MB:";
-static const std::wstring SHOW_VERSION = L"Version:1.0.0";
+static const std::wstring SHOW_VERSION = L"Version:1.0.1";
 
 
 std::wstring ControlTextFactoryConstant::showTotalMemory() {
