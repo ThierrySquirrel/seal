@@ -86,7 +86,7 @@
                     FontSize="20"
                     Foreground="Orange"
                     IsTextSelectionEnabled="True"
-                    Text="Version:1.0.0" />
+                    Text="Version:1.0.2" />
             </Grid>
             <Grid
                 Grid.Row="0"

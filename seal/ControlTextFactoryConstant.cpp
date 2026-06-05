@@ -1,5 +1,5 @@
 /**
- * Copyright 2025/11/14 ThierrySquirrel
+ * Copyright 2026/6/5 ThierrySquirrel
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,13 +22,13 @@
    * @brief: C++20
    *
    * @authors ThierrySquirrel
-   * @date 2025/11/14
+   * @date 2026/6/5
    **/
 
 static const std::wstring SHOW_TOTAL_MEMORY = L"Total memory MB:";
 static const std::wstring SHOW_USED_MEMORY = L"Used Memory MB:";
 static const std::wstring SHOW_CLEARED_MEMORY = L"Cleared Memory MB:";
-static const std::wstring SHOW_VERSION = L"Version:1.0.1";
+static const std::wstring SHOW_VERSION = L"Version:1.0.2";
 
 
 std::wstring ControlTextFactoryConstant::showTotalMemory() {

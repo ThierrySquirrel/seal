@@ -1,5 +1,5 @@
 /**
- * Copyright 2025/11/14 ThierrySquirrel
+ * Copyright 2026/6/5 ThierrySquirrel
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ using namespace winrt::Windows::Data::Xml::Dom;
   * @brief: C++20
   *
   * @authors ThierrySquirrel
-  * @date 2025/11/14
+  * @date 2026/6/5
   **/
 class ToastFactory{
 private:static winrt::Windows::UI::Notifications::ToastNotification createToast(winrt::hstring title, winrt::hstring content, winrt::hstring imageSrcLogo, winrt::hstring imageSrcHero);
