@@ -1,5 +1,5 @@
 /**
- * Copyright 2026/6/5 ThierrySquirrel
+ * Copyright 2026/8/4 ThierrySquirrel
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,25 +16,16 @@
 
 #pragma once
 
-#include "MemoryEntityBuildFactory.h"
-#include "ControlTextFactoryConstant.h"
-#include "ControlTextContainer.h"
  /**
-  * @file: ControlTextFactory.h
+  * @file: ControlTextConstant.h
   * @brief: C++20
   *
   * @authors ThierrySquirrel
-  * @date 2026/6/5
+  * @date 2026/8/4
   **/
-class ControlTextFactory{
 
-public:static std::wstring getTotalMemory();
-public:static std::wstring getUserMemory();
-public:static std::wstring getClearedMemory();
-public:static std::wstring getCheese();
-public:static std::wstring getVersion();
-
-
-public:static int getUserMemoryInt();
+class ControlTextConstant {
+public:static int getClearedMemoryMin();
+public:static int getMemoryDetectionInterval();
 };
 

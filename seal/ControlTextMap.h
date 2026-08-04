@@ -35,7 +35,12 @@ private:int getMap(std::wstring& key);
 private: std::wstring getClearedMemoryKey();
 private: std::wstring getClearedMemoryMutexKey();
 
+private: std::wstring getCheeseKey();
+
 public:void setClearedMemory(int& value);
 public:int getClearedMemory();
+
+public:void setCheese(int& value);
+public:int getCheese();
 };
 

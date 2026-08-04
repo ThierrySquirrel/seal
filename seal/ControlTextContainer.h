@@ -28,5 +28,8 @@ class ControlTextContainer{
 public:static void setClearedMemory(int& value);
 public:static int getClearedMemory();
 
+public:static void setCheese(int& value);
+public:static int getCheese();
+
 };
 

@@ -90,7 +90,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -116,6 +116,7 @@
   <ItemGroup>
     <ClInclude Include="ControlButtonFactory.h" />
     <ClInclude Include="ControlButtonFactoryConstant.h" />
+    <ClInclude Include="ControlTextConstant.h" />
     <ClInclude Include="ControlTextContainer.h" />
     <ClInclude Include="ControlTextFactory.h" />
     <ClInclude Include="ControlTextFactoryConstant.h" />
@@ -150,6 +151,7 @@
   <ItemGroup>
     <ClCompile Include="ControlButtonFactory.cpp" />
     <ClCompile Include="ControlButtonFactoryConstant.cpp" />
+    <ClCompile Include="ControlTextConstant.cpp" />
     <ClCompile Include="ControlTextContainer.cpp" />
     <ClCompile Include="ControlTextFactory.cpp" />
     <ClCompile Include="ControlTextFactoryConstant.cpp" />

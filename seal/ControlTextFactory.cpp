@@ -51,6 +51,12 @@ std::wstring ControlTextFactory::getClearedMemory() {
     return clearedMemory;
 }
 
+std::wstring ControlTextFactory::getCheese() {
+    std::wstring  showCheese = ControlTextFactoryConstant::showCheese();
+    int cheese = ControlTextContainer::getCheese();
+    showCheese += std::to_wstring(cheese);
+    return showCheese;
+}
 
 std::wstring ControlTextFactory::getVersion() {
     return ControlTextFactoryConstant::showVersion();

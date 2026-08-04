@@ -17,9 +17,11 @@
 #pragma once
 
 #include "ControlTextFactory.h"
+#include "ControlTextConstant.h"
 
 #include "MemoryCleanFactory.h"
 
+#include <chrono>
 
  /**
  * @file: MemoryCleanFactoryTemplate.h

@@ -27,6 +27,7 @@ class ControlTextFactoryConstant{
 public:static std::wstring showTotalMemory();
 public:static std::wstring showUsedMemory();
 public:static std::wstring showClearedMemory();
+public:static std::wstring showCheese();
 public:static std::wstring showVersion();
 };
 

@@ -75,6 +75,9 @@
     <ClCompile Include="IconFactory.cpp">
       <Filter>src\Icon\Factory</Filter>
     </ClCompile>
+    <ClCompile Include="ControlTextConstant.cpp">
+      <Filter>src\Control\Text\Constant</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -140,6 +143,9 @@
     </ClInclude>
     <ClInclude Include="IconFactory.h">
       <Filter>src\Icon\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlTextConstant.h">
+      <Filter>src\Control\Text\Constant</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -229,6 +235,9 @@
     </Filter>
     <Filter Include="src\Icon\Factory">
       <UniqueIdentifier>{c684a1ff-70c8-43db-97ef-06097e447598}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Control\Text\Constant">
+      <UniqueIdentifier>{f540c76a-0790-4b39-a549-8e6a015cfee8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

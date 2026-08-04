@@ -29,14 +29,42 @@ void MemoryCleanFactoryTemplate::clearedMemory() {
 
 	int userMemory = ControlTextFactory::getUserMemoryInt();
 	MemoryCleanFactory::memoryClean();
-	int userMemoryClean = ControlTextFactory::getUserMemoryInt();
 
-	int clearedMemory = userMemory - userMemoryClean;
+	int thisUserMemory = userMemory;
+
+	int clearedMemoryAll=0;
+	bool startMemoryClean = true;
+
+	bool getCheese = false;
+
+	while (startMemoryClean) {
+		int userMemoryClean = ControlTextFactory::getUserMemoryInt();
+
+		int clearedMemory = thisUserMemory - userMemoryClean;
+		if (clearedMemory >= ControlTextConstant::getClearedMemoryMin()) {
+			clearedMemoryAll+= clearedMemory;
+			thisUserMemory = userMemoryClean;
+			getCheese = true;
+
+			int interval = ControlTextConstant::getMemoryDetectionInterval();
+			std::this_thread::sleep_for(std::chrono::milliseconds(interval));
+		}
+		else{
+			clearedMemoryAll += clearedMemory;
+			startMemoryClean = false;
+		}
+	}
 
 	int previousMemory = ControlTextContainer::getClearedMemory();
 	if (previousMemory > 0) {
-		clearedMemory += previousMemory;
+		clearedMemoryAll += previousMemory;
 	}
 
-	ControlTextContainer::setClearedMemory(clearedMemory);
+	ControlTextContainer::setClearedMemory(clearedMemoryAll);
+
+	if (getCheese) {
+		int allCheese = ControlTextContainer::getCheese();
+		allCheese += 1;
+		ControlTextContainer::setCheese(allCheese);
+	}
 }

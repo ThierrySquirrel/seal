@@ -30,6 +30,8 @@ const std::wstring CLEARED_MEMORY_KEY = L"ClearedMemoryKey";
 const std::wstring CLEARED_MEMORY_MUTEX_KEY = L"ClearedMemoryMutexKey";
 const int MAX_CLEARED_MEMORY_MB = 1073741824;
 
+const std::wstring CHEESE_KEY = L"CheeseKey";
+
 ControlTextMap::ControlTextMap() {
 	ControlTextMap::MUTEX_MAP[CLEARED_MEMORY_MUTEX_KEY];
 }
@@ -53,6 +55,10 @@ std::wstring ControlTextMap::getClearedMemoryMutexKey() {
 	return CLEARED_MEMORY_MUTEX_KEY;
 }
 
+std::wstring ControlTextMap::getCheeseKey() {
+	return CHEESE_KEY;
+}
+
 void ControlTextMap::setClearedMemory(int& value) {
 	std::wstring mutexKey = ControlTextMap::getClearedMemoryMutexKey();
 	ControlTextMap::MUTEX_MAP[mutexKey].lock();
@@ -74,5 +80,23 @@ int ControlTextMap::getClearedMemory() {
 
 	ControlTextMap::MUTEX_MAP[mutexKey].unlock_shared();
 
+	return value;
+}
+
+void ControlTextMap::setCheese(int& value) {
+	std::wstring mutexKey = ControlTextMap::getClearedMemoryMutexKey();
+	ControlTextMap::MUTEX_MAP[mutexKey].lock();
+	std::wstring key = ControlTextMap::getCheeseKey();
+	ControlTextMap::setMap(key, value);
+	ControlTextMap::MUTEX_MAP[mutexKey].unlock();
+}
+
+int ControlTextMap::getCheese() {
+	std::wstring mutexKey = ControlTextMap::getClearedMemoryMutexKey();
+	ControlTextMap::MUTEX_MAP[mutexKey].lock_shared();
+
+	std::wstring key = ControlTextMap::getCheeseKey();
+	int value = ControlTextMap::getMap(key);
+	ControlTextMap::MUTEX_MAP[mutexKey].unlock_shared();
 	return value;
 }

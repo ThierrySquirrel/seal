@@ -75,6 +75,7 @@ namespace winrt::seal::implementation
         void updateTotalMemory();
         void updateUsedMemory();
         void updateClearedMemory();
+        void updateCheese();
         void updateVersion();
         void updateAllUi();
 

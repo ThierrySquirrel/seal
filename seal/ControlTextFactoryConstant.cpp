@@ -28,8 +28,8 @@
 static const std::wstring SHOW_TOTAL_MEMORY = L"Total memory MB:";
 static const std::wstring SHOW_USED_MEMORY = L"Used Memory MB:";
 static const std::wstring SHOW_CLEARED_MEMORY = L"Cleared Memory MB:";
-static const std::wstring SHOW_VERSION = L"Version:1.0.2";
-
+static const std::wstring SHOW_CHEESE= L"Quantity of 4MB Cheese:";
+static const std::wstring SHOW_VERSION = L"Version:1.0.3";
 
 std::wstring ControlTextFactoryConstant::showTotalMemory() {
 	return SHOW_TOTAL_MEMORY;
@@ -41,6 +41,10 @@ std::wstring ControlTextFactoryConstant::showUsedMemory() {
 
 std::wstring ControlTextFactoryConstant::showClearedMemory() {
 	return SHOW_CLEARED_MEMORY;
+}
+
+std::wstring ControlTextFactoryConstant::showCheese() {
+	return SHOW_CHEESE;
 }
 
 std::wstring ControlTextFactoryConstant::showVersion() {

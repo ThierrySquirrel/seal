@@ -101,6 +101,11 @@ namespace winrt::seal::implementation
 
     }
 
+    void winrt::seal::implementation::MainWindow::updateCheese() {
+		std::wstring cheese = ControlTextFactory::getCheese();
+		controlTextCheese().Text(cheese);
+    }
+
     void winrt::seal::implementation::MainWindow::updateVersion() {
         std::wstring version = ControlTextFactory::getVersion();
         controlTextlVersion().Text(version);
@@ -110,6 +115,7 @@ namespace winrt::seal::implementation
         winrt::seal::implementation::MainWindow::updateTotalMemory();
         winrt::seal::implementation::MainWindow::updateUsedMemory();
         winrt::seal::implementation::MainWindow::updateClearedMemory();
+		winrt::seal::implementation::MainWindow::updateCheese();
         winrt::seal::implementation::MainWindow::updateVersion();
 
     }

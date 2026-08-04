@@ -45,6 +45,7 @@
                     <RowDefinition Height="72" />
                     <RowDefinition Height="72" />
                     <RowDefinition Height="72" />
+                    <RowDefinition Height="72" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
@@ -79,14 +80,23 @@
                     IsTextSelectionEnabled="True"
                     Text="Cleared Memory MB:" />
                 <TextBlock
-                    x:Name="controlTextlVersion"
+                    x:Name="controlTextCheese"
                     Grid.Row="3"
                     Grid.Column="0"
                     Margin="0,16,0,16"
                     FontSize="20"
                     Foreground="Orange"
                     IsTextSelectionEnabled="True"
-                    Text="Version:1.0.2" />
+                    Text="Quantity of 4MB Cheese:" />
+                <TextBlock
+                    x:Name="controlTextlVersion"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Margin="0,16,0,16"
+                    FontSize="20"
+                    Foreground="Orange"
+                    IsTextSelectionEnabled="True"
+                    Text="Version:1.0.3" />
             </Grid>
             <Grid
                 Grid.Row="0"

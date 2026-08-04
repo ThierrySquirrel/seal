@@ -34,3 +34,11 @@ void ControlTextContainer::setClearedMemory(int& value) {
 int ControlTextContainer::getClearedMemory() {
 	return CONTROL_TEXT_MAP.getClearedMemory();
 }
+
+void ControlTextContainer::setCheese(int& value) {
+	CONTROL_TEXT_MAP.setCheese(value);
+}
+
+int ControlTextContainer::getCheese() {
+	return CONTROL_TEXT_MAP.getCheese();
+}
